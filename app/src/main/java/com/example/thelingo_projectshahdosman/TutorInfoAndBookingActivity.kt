@@ -1,5 +1,6 @@
 package com.example.thelingo_projectshahdosman
 
+import android.annotation.SuppressLint
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
@@ -181,7 +182,7 @@ class TutorInfoAndBookingActivity : AppCompatActivity() {
 //            segButton.text = format.format(date)
             segButton.text = days
             segButton.setPadding(20)
-            segButton.textSize = 60F
+            segButton.textSize = 40F
             segButton.textAlignment = TEXT_ALIGNMENT_CENTER
             segButton.selectedTextColor = resources.getColor(R.color.burgundy)
             segButton.textTypeface = resources.getFont(R.font.estedad_black)
@@ -209,7 +210,7 @@ class TutorInfoAndBookingActivity : AppCompatActivity() {
             val segButton = SegmentedButton(this)
             segButton.text = "$time:00"
             segButton.setPadding(20)
-            segButton.textSize = 65F
+            segButton.textSize = 45F
             segButton.textAlignment = TEXT_ALIGNMENT_CENTER
             segButton.selectedTextColor = resources.getColor(R.color.burgundy)
             segButton.textTypeface = resources.getFont(R.font.estedad_black)
@@ -352,6 +353,7 @@ class TutorInfoAndBookingActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("ScheduleExactAlarm")
     private fun scheduleNotification(howManyDays:Int, tutorName:String, lang:String, time:String,
                                      date: Calendar){
         val intent = Intent(applicationContext, ReminderNotificationReceiver::class.java)
