@@ -56,6 +56,7 @@
             android:layout_marginTop="116dp"
             android:fontFamily="@font/poppins_light"
             android:text="Choose a Profile \nPicture:"
+            android:textColor="@color/burgundy"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -94,6 +95,7 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_light"
             android:text="Email: "
+            android:textColor="@color/burgundy"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/upload_image" />
@@ -126,12 +128,14 @@
                 android:id="@+id/email_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
                 android:fontFamily="@font/poppins_light"
                 android:inputType="textEmailAddress"
-                android:padding="15dp" />
+                android:padding="15dp"
+                android:textColor="@color/burgundy"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
@@ -140,6 +144,7 @@
             android:layout_marginTop="6dp"
             android:fontFamily="@font/poppins_light"
             android:text="Password: "
+            android:textColor="@color/burgundy"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email_TIL" />
@@ -173,10 +178,11 @@
                 android:id="@+id/pass_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
                 android:ems="15"
                 android:fontFamily="@font/poppins_light"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/burgundy"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -208,10 +214,11 @@
                 android:id="@+id/pass_et_re_enter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
                 android:ems="15"
                 android:fontFamily="@font/poppins_light"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/burgundy"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -221,8 +228,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/estedad_regular"
-            android:textSize="18sp"
             android:text="@string/already_have_an_account_b_sign_in_b"
+            android:textColor="@color/burgundy"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/login_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

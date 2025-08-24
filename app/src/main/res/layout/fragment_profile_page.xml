@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
+        android:layout_height="172dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/user_profile_top"
         android:elevation="10dp"
@@ -40,21 +40,22 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/user_pp"
-            android:layout_width="164dp"
-            android:layout_height="173dp"
+            android:layout_width="132dp"
+            android:layout_height="117dp"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
+            android:layout_marginEnd="26dp"
             android:elevation="20dp"
             android:src="@drawable/user"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/hello_user_tv"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.626" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/hello_user_tv"
-            android:layout_width="203dp"
-            android:layout_height="188dp"
+            android:layout_width="192dp"
+            android:layout_height="121dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/estedad_regular"
             android:maxLines="7"
@@ -64,8 +65,9 @@
             android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/user_pp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.764" />
+            app:layout_constraintVertical_bias="0.509" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -99,6 +101,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/estedad_bold"
         android:text="Nothing Today..."
+        android:textColor="@color/burgundy"
         app:layout_constraintBottom_toBottomOf="@+id/today_recycler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
